@@ -35,5 +35,8 @@ class GetDramaGUI:
     def isNameOrSeasonNone(self):
         return True if self.name.get() == '' or self.season.get() == '' else FALSE
 
+def main():
+    GetDramaGUI()
         
-GetDramaGUI()
+if __name__ == '__main__':
+    main()
