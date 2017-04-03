@@ -53,7 +53,7 @@ def outputUrl(name, season, urllist):
             print('没有资源')
             return
         
-        with open(name + season + 'urllist.txt', 'w') as f:
+        with open(name + season + 'urllist.txt', 'w', encoding = 'utf-8') as f:
             for i in range(len(urllist)):
                 f.write(urllist[i][6 : -1] + '\n')
             f.close()
